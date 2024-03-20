@@ -10,4 +10,15 @@ router.get('/', (req, res)=> {
     dao.findAll(req, res);
 })
 
+//THIS ROUTE LOOKS LIKE THIS => localhost:4000/api/destinations/post
+router.post('/post', (req, res) => {
+    dao.postBody(req, res);
+})
+
+//THIS ROUTE LOOKS LIKE THIS => localhost:4000/api/destinations/createdestination
+router.post('/createdestination', (req, res) => {
+    dao.createDestination(req, res);
+})
+
+
 module.exports = router;

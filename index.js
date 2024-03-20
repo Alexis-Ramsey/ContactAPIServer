@@ -10,6 +10,9 @@ const port = 4000;
 //IMPORT OUR ROUTER.JS CODE
 const router = require('./app/routes/router')
 
+app.use(express.json())
+app.use(express.urlencoded({extended: true,}));
+
 // app.get('/', (req, res)=> {
 //     res.send('Hello')
 // })
