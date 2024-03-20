@@ -1,4 +1,4 @@
-//THIS CONTAINS SUB ROUTES FOR DDESTINATION MYSQL TABLE
+//THIS CONTAINS SUB ROUTES FOR DESTINATION MYSQL TABLE
 const daoClass = require('../../dao/destinations');
 const dao = new daoClass();
 
